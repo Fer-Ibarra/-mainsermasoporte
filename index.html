@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo y Herramientas de Mantenimiento</title>
+    <title>ToolBox Pro - Equipo y Herramientas de Mantenimiento</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Encabezado con Logo y Buscador en tiempo real -->
+    <!-- Encabezado con Título Centrado y Buscador -->
     <header>
-        <div class="logo">🛠️  Main ser mas Soporte</div>
+        <div class="logo">MANTENIMIENTO</div>
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="Buscar herramienta, soplete, grasa..." onkeyup="filtrarProductos()">
         </div>
     </header>
 
-    <!-- Menú de Categorías Principales (Especializadas para Mantenimiento) -->
+    <!-- Menú de Categorías Principales -->
     <nav class="categories-nav" id="mainCategories">
         <button class="cat-btn active" onclick="seleccionarCategoria('todos', this)">🗂️ Todo el Catálogo</button>
         <button class="cat-btn" onclick="seleccionarCategoria('Herramientas y Equipo', this)">🔧 Herramientas</button>
@@ -27,18 +27,13 @@
     </nav>
 
     <!-- Contenedor de Subcategorías Dinámicas -->
-    <div class="subcategories-bar" id="subcategoriesContainer">
-        <!-- Se llena con JavaScript según la categoría elegida -->
-    </div>
+    <div class="subcategories-bar" id="subcategoriesContainer"></div>
 
     <!-- Contenido Principal -->
     <main>
         <h1 class="section-title" id="sectionTitle">Equipamiento Profesional y Consumibles de Uso Rudo</h1>
 
-        <!-- Cuadrícula de Tarjetas de Productos -->
-        <div class="products-grid" id="productsGrid">
-            <!-- Los productos se inyectan dinámicamente mediante script.js -->
-        </div>
+        <div class="products-grid" id="productsGrid"></div>
     </main>
 
     <!-- Pie de Página con Aviso Legal OBLIGATORIO para Amazon -->
@@ -46,8 +41,8 @@
         <p><strong>Aviso de Divulgación:</strong> En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Esto no representa ningún costo adicional para ti.</p>
     </footer>
 
-    <!-- Archivo de JavaScript -->
     <script src="script.js"></script>
-
+</body>
+</html>
 </body>
 </html>
