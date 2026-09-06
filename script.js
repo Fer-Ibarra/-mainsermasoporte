@@ -1,13 +1,11 @@
-// Base de datos especializada en productos de mantenimiento industrial, soldadura y herramientas
 const productos = [
-    // Consumibles y Soldadura (Basado en las imágenes de los cilindros de gas y soplete)
     { 
         nombre: "Soplete de Inicio Activo Bernzomatic TS4000", 
         categoria: "Consumos y Soldadura", 
         subcategoria: "Sopletes y Gas", 
         rating: "⭐ 4.6 / 5 (6.5k)", 
         desc: "Encendido instantáneo, flama de alta turbulencia para soldadura fuerte y reparaciones rápidas.", 
-        imagen: "Soplete Bernzomatic TS4000" 
+        imagen: "https://cdn.homedepot.com.mx/productos/122546/122546-d.jpg" 
     },
     { 
         nombre: "Cilindro de Gas Propano Bernzomatic (Paquete de 6)", 
@@ -15,7 +13,7 @@ const productos = [
         subcategoria: "Sopletes y Gas", 
         rating: "⭐ 4.6 / 5 (6.5k)", 
         desc: "Combustible portátil y versátil para antorchas, fontanería y trabajos de campo.", 
-        imagen: "Gas Propano Bernzomatic 6pk" 
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_697259-MLM112859202066_072026-O.webp" 
     },
     { 
         nombre: "Varillas de Soldadura de Plata para Cobre", 
@@ -23,35 +21,31 @@ const productos = [
         subcategoria: "Soldadura", 
         rating: "⭐ 4.8 / 5 (1.2k)", 
         desc: "Ideal para uniones herméticas en tuberías de refrigeración y sistemas de aire acondicionado.", 
-        imagen: "Varillas de Soldadura" 
+        imagen: "https://m.media-amazon.com/images/I/41CJ2UlXDAL.jpg" 
     },
-
-    // Lubricación y Químicos (Basado en la grasa roja de las imágenes)
     { 
         nombre: "Grasa Roja Ultra Resistente AtomLube (Pack 10)", 
         categoria: "Lubricación y Químicos", 
         subcategoria: "Lubricantes y Grasas", 
         rating: "⭐ 4.7 / 5 (2.6k)", 
         desc: "Lubricante impermeable de alta temperatura para superficies metálicas y rodamientos pesados.", 
-        imagen: "Grasa Roja Industrial 10pz" 
+        imagen: "https://m.media-amazon.com/images/I/71zNmaRg9lL._SX466_.jpg" 
     },
     { 
         nombre: "Lubricante Multiusos en Spray Penetrante", 
         categoria: "Lubricación y Químicos", 
         subcategoria: "Aerosoles y Limpiadores", 
         rating: "⭐ 4.9 / 5 (8.4k)", 
-        desc: "Desflores pernos oxidados al instante, desplaza la humedad y previene la corrosión.", 
-        imagen: "Spray Flojatornillos" 
+        desc: "Afloja pernos oxidados al instante, desplaza la humedad y previene la corrosión.", 
+        imagen: "https://www.lumienlinea.com/cdn/shop/files/52208_img01.jpg?v=1719677873&width=1214" 
     },
-
-    // Instrumentos de Medición y Diagnóstico
     { 
         nombre: "Multímetro Digital de Pinza True RMS", 
         categoria: "Medición y Diagnóstico", 
         subcategoria: "Electricidad", 
         rating: "⭐ 4.8 / 5 (3.1k)", 
         desc: "Mide corriente AC/DC, voltaje y continuidad de forma segura en tableros eléctricos.", 
-        imagen: "Multímetro de Pinza" 
+        imagen: "https://m.media-amazon.com/images/I/81vnXYiV9CL._AC_UF894,1000_QL80_.jpg" 
     },
     { 
         nombre: "Termómetro Infrarrojo Láser Industrial", 
@@ -59,17 +53,15 @@ const productos = [
         subcategoria: "Temperatura", 
         rating: "⭐ 4.7 / 5 (1.9k)", 
         desc: "Lectura rápida de temperatura sin contacto para motores, tableros y maquinaria.", 
-        imagen: "Termómetro Infrarrojo" 
+        imagen: "https://m.media-amazon.com/images/I/71cb9mWIITL._AC_UF894,1000_QL80_.jpg" 
     },
-
-    // Herramientas y Equipo
     { 
         nombre: "Juego de Desarmadores Dieléctricos 1000V", 
         categoria: "Herramientas y Equipo", 
         subcategoria: "Herramienta Manual", 
         rating: "⭐ 4.9 / 5 (4.2k)", 
         desc: "Barras aisladas certificadas para trabajos eléctricos con total seguridad.", 
-        imagen: "Desarmadores Aislados" 
+        imagen: "https://guicom.com.mx/wp-content/uploads/2025/10/Juego-de-desarmadores-dielectricos-TRUPER-1000-v1.webp" 
     },
     { 
         nombre: "Flexómetro de Uso Rudo 8 Metros con Imán", 
@@ -77,17 +69,15 @@ const productos = [
         subcategoria: "Medición Manual", 
         rating: "⭐ 4.8 / 5 (2.5k)", 
         desc: "Cinta ancha reforzada con gancho magnético doble para mediciones precisas en solitario.", 
-        imagen: "Flexómetro Profesional" 
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_734477-MLM87469989716_072025-O.webp" 
     },
-
-    // Seguridad Industrial
     { 
         nombre: "Lámpara Frontal Recargable LED 1000 Lúmenes", 
         categoria: "Seguridad Industrial", 
         subcategoria: "Iluminación de Trabajo", 
         rating: "⭐ 4.8 / 5 (3.8k)", 
         desc: "Manos libres con base magnética y luz de alta potencia para espacios confinados y oscuros.", 
-        imagen: "Lámpara de Cabeza LED" 
+        imagen: "https://media.adeo.com/mkp/e2c378acc75903c95627c277128ceef3/media.jpg?width=3000&height=3000&format=jpg&quality=80&fit=bounds" 
     },
     { 
         nombre: "Guantes Anticorte Nivel 5 con Nitrilo", 
@@ -95,11 +85,10 @@ const productos = [
         subcategoria: "Protección Personal", 
         rating: "⭐ 4.7 / 5 (5.1k)", 
         desc: "Máxima destreza y agarre firme en superficies aceitosas protegiendo contra abrasiones.", 
-        imagen: "Guantes Anticorte Nitrilo" 
+        imagen: "https://dermacare.mx/wp-content/uploads/2023/12/51-670-1.jpg" 
     }
 ];
 
-// Subcategorías asociadas para el segundo nivel de filtros de mantenimiento
 const subcategoriasPorCategoria = {
     "Herramientas y Equipo": ["Herramienta Manual", "Medición Manual"],
     "Consumos y Soldadura": ["Sopletes y Gas", "Soldadura"],
@@ -111,21 +100,17 @@ const subcategoriasPorCategoria = {
 let categoriaActual = 'todos';
 let subcategoriaActual = 'todos';
 
-// Inicializar la página mostrando todos los productos técnicos
 window.onload = function() {
     mostrarProductos(productos);
 };
 
-// Función para seleccionar categoría principal
 function seleccionarCategoria(cat, elemento) {
     categoriaActual = cat;
     subcategoriaActual = 'todos';
 
-    // Marcar botón activo en el menú principal
     document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.remove('active'));
     elemento.classList.add('active');
 
-    // Generar la barra de subcategorías dinámicamente
     const subContainer = document.getElementById('subcategoriesContainer');
     subContainer.innerHTML = '';
 
@@ -148,7 +133,6 @@ function seleccionarCategoria(cat, elemento) {
     aplicarFiltros();
 }
 
-// Función para filtrar por subcategoría específica
 function filtrarPorSubcategoria(sub, elemento) {
     subcategoriaActual = sub;
     document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
@@ -156,12 +140,10 @@ function filtrarPorSubcategoria(sub, elemento) {
     aplicarFiltros();
 }
 
-// Motor de búsqueda en tiempo real
 function filtrarProductos() {
     aplicarFiltros();
 }
 
-// Lógica central de filtros y buscador
 function aplicarFiltros() {
     let textoBusqueda = document.getElementById('searchInput').value.toLowerCase();
 
@@ -176,7 +158,6 @@ function aplicarFiltros() {
     mostrarProductos(filtrados);
 }
 
-// Pintar las tarjetas de productos técnicos en pantalla
 function mostrarProductos(lista) {
     let grid = document.getElementById('productsGrid');
     grid.innerHTML = '';
@@ -192,12 +173,14 @@ function mostrarProductos(lista) {
         card.innerHTML = `
             <div>
                 <span class="product-category-tag">${p.subcategoria}</span>
-                <div class="product-img">[ ${p.imagen} ]</div>
+                <div class="product-img">
+                    <img src="${p.imagen}" alt="${p.nombre}">
+                </div>
                 <h3 class="product-name">${p.nombre}</h3>
                 <div class="product-rating">${p.rating}</div>
                 <p class="product-desc">${p.desc}</p>
             </div>
-            <a href="https://www.amazon.com" target="_blank" class="amazon-btn">Ver en Amazon</a>
+            <a href="https://www.amazon.com" target="_blank" class="amazon-btn">Ver Producto</a>
         `;
         grid.appendChild(card);
     });
